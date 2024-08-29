@@ -86,7 +86,7 @@ app.post('/api/ratings', loginRequired, async (req, res) => {
   
   const user = await User.findByPk(userId);
   const newRating = await user.createRating({
-      movieId: movieId, 
+      movieId: movieId,
       score: score,
     });
     res.json(newRating);
