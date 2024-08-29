@@ -8,16 +8,16 @@ export default function LoginPage() {
   const handleLogin = async (e, formData) => {
     e.preventDefault();
     const res = await axios.post('/api/auth', formData);
-    console.log(res.data);
+    // console.log(res.data);
     if (res.data.success) {
       navigate('/me');
     }
   };
   return (
-    <>
-      <h1>Log In</h1>
+    <div className="body">
+      <h1 className="page-title">Log In</h1>
       <LoginForm onLogin={handleLogin} />
-    </>
+    </div>
   );
 }
 

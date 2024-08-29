@@ -19,7 +19,7 @@ export default function CreateRatingForm({ onCreateRating }) {
         <option value="4">4 stars</option>
         <option value="5">5 stars</option>
       </select>
-      <button type="submit">Submit</button>
+      <button type="submit" id="rating-submit-button">Submit</button>
     </form>
   );
 }

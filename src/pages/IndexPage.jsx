@@ -1,8 +1,8 @@
 export default function IndexPage() {
   return (
-    <>
-      <h1>Movie Ratings App</h1>
+    <div className="body">
+      <h1 className="page-title">Movie Ratings App</h1>
       <p>Welcome!</p>
-    </>
+    </div>
   );
 }

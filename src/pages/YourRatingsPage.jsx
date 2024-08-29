@@ -14,9 +14,9 @@ export default function YourRatingsPage() {
   });
   
   return (
-    <>
-      <h1>Your Ratings</h1>
+    <div className="body">
+      <h1 className="page-title">Your Ratings</h1>
       <ul>{myRatings}</ul>
-    </>
+    </div>
   );
 }

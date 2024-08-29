@@ -1,37 +1,27 @@
-import { NavLink, Outlet, useNavigate } from 'react-router-dom';
-import LogoutButton from './components/LogoutButton.jsx';
-import axios from 'axios';
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import LogoutButton from "./components/LogoutButton.jsx";
+import axios from "axios";
 
 export default function App() {
   const navigate = useNavigate();
 
   const handleLogout = async (e) => {
     e.preventDefault();
-    const res = await axios.post('/api/logout');
+    const res = await axios.post("/api/logout");
     if (res.data.success) {
-      navigate('/');
+      navigate("/");
     }
   };
   return (
     <>
       <nav>
-        <ul>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/movies">All movies</NavLink>
-          </li>
-          <li>
-            <NavLink to="/login">Log in</NavLink>
-          </li>
-          <li>
-            <NavLink to="/me">Your ratings</NavLink>
-          </li>
-          <li>
-            <LogoutButton onLogout={handleLogout} />
-          </li>
-        </ul>
+        <div id="nav-bar-list">
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/movies">All movies</NavLink>
+          <NavLink to="/login">Log in</NavLink>
+          <NavLink to="/me">Your ratings</NavLink>
+          <LogoutButton onLogout={handleLogout} />
+        </div>
       </nav>
 
       <hr />

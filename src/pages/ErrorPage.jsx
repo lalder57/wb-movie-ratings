@@ -17,13 +17,13 @@ function ErrorPage() {
   }
 
   return (
-    <>
-      <h1>Uh oh.</h1>
+    <div className="body">
+      <h1 className="page-title">Uh oh.</h1>
       <p>Sorry, an unexpected error has occurred.</p>
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
-    </>
+    </div>
   );
 }
 

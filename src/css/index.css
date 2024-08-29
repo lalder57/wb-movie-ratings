@@ -12,3 +12,71 @@ a:hover {
 a.active {
   font-weight: bold;
 }
+
+nav {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#nav-bar-list {
+  height: 70px;;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+#logout-button:hover {
+  cursor: pointer;
+
+}
+
+.body {
+  height: 100vh;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page-title {
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+#label-password {
+  margin-left: 15px;
+}
+
+label {
+  margin-right: 5px;
+}
+
+#login-button {
+  margin-left: 15px;
+}
+
+#login-button:hover {
+  cursor: pointer;
+}
+
+#all-movie-list {
+  columns: 3;
+  column-gap: 100px;
+}
+
+#rating-submit-button {
+  margin-left: 10px;
+}
+
+#rating-submit-button:hover {
+  cursor: pointer;
+}

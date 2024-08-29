@@ -10,11 +10,11 @@ export default function AllMoviesPage() {
     </li>
   })
   return (
-    <>
-      <h1>All Movies</h1>
-      <ul>
+    <div className="body">
+      <h1 className="page-title">All Movies</h1>
+      <ul id="all-movie-list">
         {movieListItems}
       </ul>
-    </>
+    </div>
   );
 }

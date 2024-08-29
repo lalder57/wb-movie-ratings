@@ -21,7 +21,7 @@ export default function LoginForm({ onLogin }) {
         required
         onChange={(e) => setEmailValue(e.target.value)}
       />
-      <label htmlFor="password">Password:</label>
+      <label htmlFor="password" id="label-password">Password:</label>
       <input
         name="password"
         id="password"
@@ -29,7 +29,7 @@ export default function LoginForm({ onLogin }) {
         required
         onChange={(e) => setPasswordValue(e.target.value)}
       />
-      <button type="submit">Log In</button>
+      <button type="submit" id="login-button">Log In</button>
     </form>
   );
 }
